@@ -1,0 +1,173 @@
+/*Tittel til artikkel*/
+
+.artikkel_tittel{
+    margin-top: 13rem;
+    width: 100%;
+    background-color: rgb(25, 157, 117);
+}
+.artikkel_tittel h1{
+    padding-left: 9rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/*Innholdet i artikkelen*/
+.artikkel_innhold{
+    padding-top: 2rem;
+    padding-left: 9rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+/*Mengde teksten*/
+
+.artikkel_tekst{
+    max-width: 70rem;
+}
+
+.artikkel_tekst p{
+    font-size: 1.6rem;
+    text-align: justify;
+    
+}
+.artikkel_tekst i{
+    font-size: 1.6rem;
+    text-align: justify;
+    color: rgb(25, 157, 117);
+}
+.artikkel_tekst b{
+    font-size: 1.6rem;
+    text-align: justify;
+    color: rgb(25, 157, 117);
+    font-weight: 800;
+}
+.artikkel_tekst h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(25, 157, 117);
+}
+
+.artikkel_tekst h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(8, 82, 59);
+}
+
+.artikkel_tekst h3{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: rgb(8, 82, 59);
+}
+
+/*Forfatter informasjonen*/
+.artikkel_forfatter{
+    margin-top: 8rem;
+    display: flex;
+    align-content: center;
+}
+
+.artikkel_forfatter div {
+   vertical-align: top;
+   display: inline-block;
+   text-align: center;
+}
+
+.artikkel_forfatter img {
+    height: 20rem;
+    width: 15rem;
+}
+
+.artikkel_forfatter h2{
+    font-size: 2.5em;
+    color: rgb(8, 82, 59);
+}
+
+/*Venstre innhold*/
+
+.artikkel_right_innhold{
+    text-align: end;
+    padding-right: 9rem;
+    height: 38rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15rem;
+}
+
+.artikkel_right_innhold > h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(25, 157, 117);
+    padding-bottom: 1rem;
+}
+
+.artikkel_right_innhold > a{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(69, 66, 66);
+    padding: 0.5rem;
+}
+
+.artikkel_right_innhold > a:visited{
+    color: rgb(8, 82, 59);
+}
+
+.artikkel_right_innhold > a:hover{
+    background-color: rgb(8, 82, 59);
+    color: white;
+}
+
+/*Les mer knapp*/
+.artikkel_right_innhold .artikkel_right_mer{
+    background-color: rgb(25, 157, 117);
+    padding-top: 3rem;
+    padding: 1rem;
+    max-width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.artikkel_right_innhold .artikkel_right_mer h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    width: 15rem;
+}
+
+.artikkel_right_innhold .artikkel_right_mer a:visited{
+    color :white;
+}
+.artikkel_right_innhold .artikkel_right_mer:hover{
+    background-color: rgb(8, 82, 59);
+}
+
+/*Tilbake knapp*/
+.tilbake_knapp {
+    background-color: rgb(25, 157, 117);
+    height: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    max-width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.tilbake_knapp:hover{
+    background-color: rgb(8, 82, 59); 
+    transition: 0.5s;
+}
+
+.tilbake_knapp h1{
+    font-size: 3rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+.tilbake_knapp img{
+    height: 3rem;
+}

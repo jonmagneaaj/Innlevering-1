@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgb(25, 157, 117);
+    font-weight: 700;
+    font-size: 3rem;
+    height: 13rem;
+    background-color: rgb(255,255,255);
+    vertical-align: middle;
+    z-index: 2;
+    box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.3);
+}
+
+/*Logoen med skrift*/
+
+#logo {
+    display: flex;
+    float: left;
+    max-width: 7rem;
+    margin: auto;
+    padding-left: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    float: left;
+    width: 12.1rem;
+}
+#logo div {
+    padding-left: 1rem;
+    float: right;
+    width: 25rem;
+}
+#logo div h3{
+    font-size: 2.7rem;
+}
+
+#logo div h4{
+    font-size: 1.1rem;
+    color: rgb(69, 66, 66);
+    width: 23rem;
+}
+
+header a:visited {
+    color: rgb(25, 157, 117);
+}
+/*Navigasjonsbaren*/
+
+#navigation { /*Container*/
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 120rem;
+    overflow: hidden;
+}
+
+#navigation .dropdown { /*Alle bokser*/
+    float: left;
+    overflow: hidden;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    margin: 0;
+    
+}
+
+#navigation .dropdown > a { /*a elementet til alle boksene*/
+    
+    font-size: 2.3rem;
+    color: rgb(25, 157, 117);
+    text-align: center;
+    padding: 1rem 1.5rem;
+    display: block;
+  }
+
+#navigation .dropdown .dropdown_content{ /*Dropdown menyen*/
+    display: none;
+    position: absolute;
+    background-color: rgb(25, 157, 117);
+    z-index: 2;
+    color: white;
+    box-shadow: 1rem 1rem 1.5rem  rgba(0,0,0,0.3);
+    }
+
+#navigation .dropdown .dropdown_content > a{ /*a elementene i dropdown menyen*/
+    float: none;
+    color: white;
+    display: block;
+    text-align: left;
+    font-size: 2.3rem;
+    width: 100%;
+    border-top: 1px solid #2DCC9C;
+    padding: 0.5rem;
+    background-color: rgb(25, 157, 117);
+}
+
+#navigation .dropdown .dropdown_content a:hover{ /*hover på dropdown elementer*/
+    background-color: rgb(8, 82, 59);
+}
+
+#navigation .dropdown:hover > a {
+    background-color: rgb(25, 157, 117);
+    color: white;
+    box-shadow: 0px 0.5rem 1.5rem rgba(0,0,0,0.3);
+}
+
+#navigation .dropdown:hover .dropdown_content{
+    display: block;
+    transition: 0.5s;
+}
+
+/*Søkebaren*/
+#searchbar {
+    display: flex;
+    margin: auto;
+    justify-content: left;
+    align-items: center;
+    width: 25rem;
+    height: 4rem;
+    border-style: solid;
+    border-width: 0.2rem ;
+    border-color: rgb(25, 157, 117);
+    border-radius: 3rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-right: 9rem;
+}
+
+#searchbar input[type=image] {
+    height: 2.3rem;
+    margin-left: 0.5rem;
+}
+
+#searchbar input[type=text] {
+    font-size: 2rem;
+    padding-left: 1rem;
+    background: none;
+    border: none;
+    width: 20rem;
+    height:4rem;
+    border-radius: 3rem 0 0 3rem;
+    color: rgb(25, 157, 117);
+}
+
+::placeholder {
+    color: rgb(25, 157, 117);
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(25, 157, 117);
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(25, 157, 117);
+}
+
+/*Første seksjon*/
+/*Introduksjon*/
+
+#ideologi {
+    background-image: url(./img/ocean_familuy.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Da blir bildet igjen*/
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    box-sizing: border-box;
+    margin:0;
+    margin-top: 13rem;
+    padding-left: 8.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Overskriften*/
+#ideologi h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    height: 5rem;
+    max-width: 75rem;
+    margin-bottom: 1rem;
+}
+/*Mengde teksten*/
+#ideologi h2{
+    font-weight: 500;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    height: 25rem;
+    padding: 0rem;
+    margin-bottom: 1rem;
+}
+/*Sentrerer innholdet*/
+.center-div {
+    max-width: 90rem;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    float: left;
+}
+
+#join { /*Join Knapp*/
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    background-color: rgb(25, 157, 117);
+    height: 8.5rem;
+    width: 25rem;
+    text-align: center;
+    margin-right: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#join:hover{ /*Hover animasjon*/
+    background-color: rgb(8, 82, 59);
+    transition: 0.5s;
+}
+
+#gift { /*Gi gave knapp*/
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    background-color: rgb(8, 82, 59);
+    height: 8.5rem;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gift:hover{ /*Hover animasjon*/
+    background-color: rgb(25, 157, 117); 
+    transition: 0.5s;
+}
+/*Partiprogrammet for 2017-2021*/
+/*Tittel*/
+#partiprogram h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 9rem;
+    color: rgb(25, 157, 117);
+}
+
+/*Partiprogrammene*/
+
+.scroll-container{ /*Container*/
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#program { /*Innholdet*/
+    width: 300%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-auto-rows: 44rem;
+}
+
+#program a { /*Selve rutene*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40rem;
+    width: 28rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#program .program_tittel{ /*Teksten*/
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(25, 157, 117);
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#program img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Aktuelt*/
+
+.tittel{ /*Tittel*/
+    font-size: 4rem;
+    color: white;
+    background-color: rgb(8, 82, 59);
+    padding-left: 9rem;
+    margin-bottom: 4rem; 
+}
+#nyheter {
+    display: grid;
+    grid-gap: 3.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 25rem 25rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    z-index: 1;
+}
+#nyheter a{
+    display: flex;
+    align-items: flex-end;
+  /*  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative; 
+}
+
+#aktuelt #nyheter a .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(transparent 65%, rgba(0,0,0,0.6));
+    text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+#aktuelt a .overlay h2, h3, p{
+    vertical-align: sub;
+}
+
+
+#aktuelt img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#aktuelt #nyheter a h2{ /*tittelen på artikkelene*/
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+#aktuelt #nyheter a h3{ /*Tittelen på de mindre artikklene*/
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    padding-left: 1rem;
+    
+}
+
+#aktuelt #nyheter a p{ /*Undeteksten på artikkelene*/
+    font-size: 3rem;
+    font-weight: 400;
+    justify-self: end;
+    padding-left: 1rem;
+}
+
+#aktuelt a:visited {
+    color: white;
+}
+
+
+/*Artikkel bakgrunnene*/
+
+#b-6, #b-8, #b-9, #b-10, #b-11, #b-12{/*Grønn bakgrunnsfarge*/
+    background-color: rgb(25, 157, 117)
+}
+
+/*Regler for størrelse for boksene*/
+.big_box { /*2x2 boks*/
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.long_box { /*1x2 boks*/
+    grid-column: span 2;
+}
+
+/*Les mer knapp*/
+.link_videre{
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(25, 157, 117);
+    padding-left: 9rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem; 
+    max-width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 7rem;
+}
+
+.link_videre h1{
+    max-width: 30rem;
+}
+
+.link_videre img{
+    height: 2.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.link_videre:hover{
+    background-color: rgb(8, 82, 59); 
+    transition: 0.5s;
+}
+
+/*Footer*/
+
+footer{
+    max-height: 35.6rem;
+    background-color: rgb(69, 66, 66);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+/*Logo venstre kolonne*/
+footer .logo_small {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+footer .logo_small h3{
+    font-size: 2.7rem;
+    color: rgb(25, 157, 117);
+    padding-left: 1rem;
+}
+
+footer .logo_small h4{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+}
+
+footer .logo_small img{
+    height: 12.2rem;
+}
+/*Kontaktskjema midterste kolonne*/
+
+footer .kontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+footer .kontakt a{
+    color: inherit;
+}
+
+footer .kontakt a, p{
+    padding-top: 0.5rem;
+}
+
+/*Sosiale medier høyre kolonne*/
+footer .footer_links a{
+    padding: 0.5rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+}
+
+footer .footer_links img{
+    height: 3.8rem;
+    width: 3.8rem;
+}
+
+footer .footer_links p{
+    text-decoration: underline;
+    color: inherit;
+    padding-left: 0.5rem;
+}
