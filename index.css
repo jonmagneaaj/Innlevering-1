@@ -58,8 +58,9 @@ header {
     width: 23rem;
 }
 
-header a:visited {
-    color: rgb(25, 157, 117);
+a:visited {
+    color: inherit;
+    text-decoration: none;
 }
 /*Navigasjonsbaren*/
 
